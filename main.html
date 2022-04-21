@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 8 Website</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="navigation" id="navbar">
+        <a class="active">Lab 08</a>
+        <a onclick="loadExercise(1)">Menu</a>
+        <a onclick="loadExercise(2)">Password Validate</a>
+        <a onclick="loadExercise(3)">Slideshow</a>
+        <a onclick="loadExercise(4)">Profile</a>
+        <a onclick="loadExercise(5)">CSS</a>
+    </div>
+
+    <div class="execises" id="menu" style="display:none">
+        <h3 class="title">Welcome to Lab 8</h3>
+    </div>
+    <div class="exercises" id="validator" style="display:none">
+        <h2 style="font-size:60px">Password Validate</h2>
+        <form id="passwordForm">
+            <label for="pwd">Enter Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <label for="validate">Validate Password:</label><br>
+            <input type="password" id="validate" name="validate"><br><br>
+            <input type="submit" id="btSubmit" value="Validate" class="btn btn-primary" onclick="checkPassword()">
+        </form>
+    </div>
+
+    <div class="exercises" id="slideshow" style="display:none">
+        <h1 class="title">KU Championship Slide Show</h1>
+        <button id="start" type="button" onclick="loadSlideshow()">Press To Start</button>
+    </div>
+
+    <div class="exercises" id="profile" style="display:none">
+        
+    </div>
+
+    <div class="exercises" id="css" style="display:none">
+        <p ><strong>Border:</strong></p><br>
+        <form id="border">
+            <label for="red">Red (0-255): </label><br>
+            <input type="text" id="redBorder" name="red"><br>
+            <label for="green">Green (0-255): </label><br>
+            <input type="text" id="greenBorder" name="green"><br>
+            <label for="blue">Blue (0-255): </label><br>
+            <input type="text" id="blueBorder" name="blue"><br>
+            <label for="width">Width:</lable><br>
+            <input type="text" id="width" name="width"><br>
+        </form><br><br>
+
+        <p><strong>Background:</strong></p><br>
+        <form id="background">
+            <label for="red">Red (0-255): </label><br>
+            <input type="text" id="redBack" name="red"><br>
+            <label for="green">Green (0-255): </label><br>
+            <input type="text" id="greenBack" name="green"><br>
+            <label for="blue">Blue (0-255): </label><br>
+            <input type="text" id="blueBack" name="blue"><br>
+        </form>
+
+        <button id="changeColor" type="submit" onClick="callCSS(); return false;">Submit</button>
+        <p id="text">dsflkjfsdklffsjfsdlkfsdjfsdklfsdjfsdlasdjfa;lsdf
+            sd;flkjasd;lfja;sldfas;ldfa;lsdjf;lasdjf
+            asdf;alsdjf;lasjdf;lasdjfla;sjdf;lasjdf;lasjdf;lasjdf;lasjdfasdfl;alsdjfasdjf;
+            a;sldfjas;ldjfa;sldkfjalsdjflsdfjlsdjfldskjfa;sldfkja;lsdjfl;asdjfl;asdjkfl;sdjfl;sdj
+        </p>
+
+    </div>
+
+    <div class="exercises" id="imgDiv" style="display:none">
+        <img id="engagedImgage" src="./assets/img1.jpeg" height="500px" width="750px"></img><br>
+        <button id="back" type="button" onclick="back()">Previous Image</button>
+        <button id="next" type="button" onclick="next()">Next Image</button>
+    </div>
+    <script  src="index.js"></script>
+
+    
+</body>
+</html>

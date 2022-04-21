@@ -1,0 +1,65 @@
+body {
+    background-color: lightgrey;
+}
+
+.navigation {
+    background-color: black;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.navigation a {
+    float: left;
+    color: lightgrey;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.navigation a.active {
+    background-color: lightblue;
+    color: black;
+}
+
+.exercises {
+    text-align: center;
+    padding: 10%;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+
+.exercises button, .submit {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+
+input[type='password']
+{
+  font-family: Verdana;
+  letter-spacing: 0.125em;
+}
+
+
+
+.title {
+    text-align: center;
+    color: rgb(0, 89, 255);
+}
+
+#engagedImage {
+    height: 500px;
+    width: 400px;
+}
+
